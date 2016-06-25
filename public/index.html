@@ -127,7 +127,7 @@
                 <legend>GET IN TOUCH</legend>
                 <input type="text" name="name" value="Name" />
                 <input type="email" name="email" value="Email" />
-                <div id="resize"><textarea id="ta" type="text" name="message" onkeyup="resize(event)">Message</textarea></div>
+                <div id="resize"><textarea id="ta" type="text" name="message" onkeydown="resize(event)" onscroll="scrollResize()">Message</textarea></div>
                 <input type="submit" name="sendbtn" value="SEND" />
             </fieldset>
 

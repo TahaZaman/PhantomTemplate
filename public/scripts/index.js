@@ -1,5 +1,8 @@
 
 var line = 2;
+var firstLine = true;
+var scrollFlag = true;
+var linHeight = 2;
 function menubtnclik() {
     //menuMoveCount = 0;
     //var currWidth = document.getElementById("menu").clientWidth;
@@ -21,17 +24,35 @@ function resize(event) {
     var keyCode = event.keyCode;
     var content = document.getElementById("ta").value;
     var lastBreak = content.lastIndexOf('\n');
-    var start = 0;
     var currLine = content.substring(lastBreak + 1, content.length);
-    console.log(currLine.length);
-    if (keyCode == 8 && currLine.length == 0 && line > 2) {
+    
+    //increasing size if enter pressed
+    console.log(firstLine);
+    if (keyCode == "13") {
+        if (firstLine == false) {
+            line++;
+            document.getElementById("ta").style.height = (linHeight * line) + "em";
+        }
+        firstLine = false;
+
+    }
+    //decresing size     
+    
+    else if ( currLine.length == 0 && line > 2) {
         line--;
-        document.getElementById("ta").style.height = (1.5 * line) + "em";
+        if (line == 2)
+            firstLine = true;
+        document.getElementById("ta").style.height = (linHeight * line) + "em";
     }
-    if (keyCode == "13" || (currLine.length % 99 == 0 && currLine.length / 99 != 1  && currLine.length != 0)) {
+}
+
+function scrollResize() {
+    if (scrollFlag) {
         line++;
-        document.getElementById("ta").style.height = (1.5 * line) + "em";
+        document.getElementById("ta").style.height = (linHeight * line) + "em";
     }
+    scrollFlag = !scrollFlag;
+
 }
 
 

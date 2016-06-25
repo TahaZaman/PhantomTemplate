@@ -156,24 +156,26 @@ h1 a{
      display: inline-block;
      border:0;
      margin:0px 40px 40px 0;
-     width: 353px;
+     width: 29%;
      height: 326px;
      
  }
 
 .blocksdiv{
     border-radius: 0.5em;
-    width: 353px;
+    width: 100%;
     height: 326px;
     z-index: -1;
     -webkit-transition: transform 0.5s ease;
     -moz-transition: transform 0.5s ease  ;
     transition: transform 0.5s ease  ;
+    background-size: 100% 100% !important;
+
 }
 .overlay
 {
     border-radius: 0.5em;
-    width: 353px;
+    width: 100%;
     height: 326px;
     background-image: url(images/cross.svg);
     -webkit-transition: transform 0.5s ease  ;
@@ -290,13 +292,13 @@ h1 a{
 }
 fieldset{
     border:0;
-    width: 105ch;
+    width: 65%;
     padding-top: 4em; 
 }
 
 input
 {
-    width: 47ch;
+    width: 46%;
     background: #f6f6f6;
     border: 0;
     outline: 0 !important;
@@ -305,12 +307,16 @@ input
     font-family: inherit;
     font-weight: 100;
     color: #5f5b5b;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 input[type="email"]
 {
-    margin-left: 5ch;
+    margin-left: 5%;
 }
 textarea{
+    padding-bottom: 15px;
+    margin-bottom: 20px;
     background: #f6f6f6;
     border: 0;
     outline: 0 !important;
@@ -320,10 +326,16 @@ textarea{
     font-weight: 100;
     color: #5f5b5b;
     resize: none;
-    line-height: 1.5em;
+    line-height: 2em;
     min-height: 3em;
     overflow: hidden;
-    width: 99ch;
+    width: 97%;
+}
+
+input:focus, textarea:focus
+{
+    border-color: #f2849e;
+    border-width: 2px;
 }
 
 
