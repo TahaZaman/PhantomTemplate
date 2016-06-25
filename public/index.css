@@ -29,9 +29,10 @@ html, body{
     float: right;
     padding-left: 15%;
 }
-#nav h2{
+h2, legend{
     letter-spacing: 4px;
     font-size: 1.3em;
+    font-weight: bold;
     padding: 0;
 }
 .navbar .item{
@@ -148,6 +149,7 @@ h1 a{
 {
     list-style-type: none;
     margin-top: 30px;
+    padding: 0;
 }
  #blocks .item
  {
@@ -280,8 +282,55 @@ h1 a{
     opacity: 0;
 }
 
-.blocksdiv img{
-    float: left;
-    border-radius: 0.5em;
+#footer
+{
+    background: #f6f6f6;
+    padding: 5em 6em 3em 5em;
+    margin: 3em auto 0 0;
+}
+fieldset{
+    border:0;
+    width: 105ch;
+    padding-top: 4em; 
+}
 
+input
+{
+    width: 47ch;
+    background: #f6f6f6;
+    border: 0;
+    outline: 0 !important;
+    border-bottom: solid 1px #c9c9c9;
+    font-size: 1.05em;
+    font-family: inherit;
+    font-weight: 100;
+    color: #5f5b5b;
+}
+input[type="email"]
+{
+    margin-left: 5ch;
+}
+textarea{
+    background: #f6f6f6;
+    border: 0;
+    outline: 0 !important;
+    border-bottom: solid 1px #c9c9c9;
+    font-size: 1.05em;
+    font-family: inherit;
+    font-weight: 100;
+    color: #5f5b5b;
+    resize: none;
+    line-height: 1.5em;
+    min-height: 3em;
+    overflow: hidden;
+    width: 99ch;
+}
+
+
+
+
+input[type="submit"]
+{
+    width:8em;
+    
 }
