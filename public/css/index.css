@@ -6,7 +6,6 @@ html, body{
     padding: 0;
     margin: 0;
     color: rgb(88, 88, 88);
-    position: absolute;
 
 }
 .navbar
@@ -25,7 +24,7 @@ html, body{
     height: 100%;
     text-align: left;
     padding: 3.5%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: inherit;
     float: right;
     padding-left: 15%;
 }
@@ -80,7 +79,7 @@ h2, legend{
 }
 
 #menubtn{
-    background: rgba(249, 249, 249, 0.25);
+    background: rgba(255, 255, 255, 0.55);
     border-radius: 2px;
     border:0;
     outline: 0;
@@ -149,7 +148,9 @@ h1 a{
 {
     list-style-type: none;
     margin-top: 30px;
+    width:100%;
     padding: 0;
+    min-width: 1100px;
 }
  #blocks .item
  {
@@ -158,7 +159,7 @@ h1 a{
      margin:0px 40px 40px 0;
      width: 29%;
      height: 326px;
-     
+     text-align: center;
  }
 
 .blocksdiv{
@@ -177,7 +178,7 @@ h1 a{
     border-radius: 0.5em;
     width: 100%;
     height: 326px;
-    background-image: url(images/cross.svg);
+    background-image: url(../images/cross.svg);
     -webkit-transition: transform 0.5s ease  ;
     -moz-transition: transform 0.5s ease ;
     transition: transform 0.5s ease  ;
@@ -290,9 +291,15 @@ h1 a{
     padding: 5em 6em 3em 5em;
     margin: 3em auto 0 0;
 }
+form{
+    width:65%;
+    margin-right: 5%;
+    padding: 0;
+    display: inline-block;
+}
 fieldset{
     border:0;
-    width: 65%;
+    width: 100%;
     padding-top: 4em; 
 }
 
@@ -340,7 +347,11 @@ input:focus, textarea:focus
 }
 
 input[type="submit"]:hover{
-    background: #f2849e
+    background: #f2849e;
+    cursor: pointer;
+}
+input[type="submit"]:focus, input[type="submit"]:active{
+    outline-width: 2px !important;
 }
 
 
@@ -356,5 +367,87 @@ input[type="submit"]
     font-weight: bold;
     background: #585858;
     color: #ffffff;
+    -webkit-transition: color 0.2s ease, background-color 0.2s ease;
+    -moz-transition: color 0.2s ease, background-color 0.2s ease;
+    transition: color 0.2s ease, background-color 0.2s ease;
     
+}
+
+
+.fontAwesome 
+{
+    list-style-type: none;
+    font-family: FontAwesome;
+    width: 100%;
+    padding: 0;
+    margin-top: 4em;
+}
+.icon{
+    display: inline-block;
+    border: solid 1px #c9c9c9;
+    padding: 14px;
+    border-radius: 5px; 
+    width: 25px;
+    height: 22px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    -webkit-transition: color 0.2s ease, border 0.2s ease;
+    -moz-transition: color 0.2s ease, border 0.2s ease;
+    transition: color 0.2s ease, border 0.2s ease;
+    
+}
+.fontAwesome a{
+    text-decoration: none;
+    color: #585858;
+    font-size: 22px;
+    display: inline-block;
+}
+
+#followUs
+{
+    width: 30%;
+    display: inline-block;
+    position: absolute;
+    margin-top: -1em;
+}
+
+ .icon:hover
+ {
+     color: #f2849e;
+     border-color: #f2849e;
+     cursor: pointer;
+ }
+
+ .bottom
+ {
+    list-style-type: none;
+    font-size: 13px;
+    color: #a9a6a6;
+    font-family: inherit;
+    font-weight: 300;
+
+ }
+ .btmItem
+ {
+     display: inline-block;
+     border-right: 0.1em solid #c9c9c9;
+     padding: 2px 10px;
+ }
+ .btmItem:last-child
+ {
+     border: none;
+ }
+ .btmItem a
+ {
+     text-decoration: none;
+     color: #a9a6a6;
+     border-bottom: 1px dotted #a9a6a6;
+ }
+
+ .btmItem a:hover
+{
+    color: #f2849e;
+    cursor: pointer;
+    border:none;
 }

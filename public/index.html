@@ -2,8 +2,9 @@
 <html>
 
 <head>
-    <link type="text/css" href="index.css" rel="stylesheet" />
+    <link type="text/css" href="css/index.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700,400,800' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 
 <body>
@@ -125,17 +126,34 @@
         <form>
             <fieldset>
                 <legend>GET IN TOUCH</legend>
-                <input type="text" name="name" value="Name" />
-                <input type="email" name="email" value="Email" />
-                <div id="resize"><textarea id="ta" type="text" name="message" onkeydown="resize(event)" onscroll="scrollResize()">Message</textarea></div>
+                <input type="text" name="name" placeholder="Name" />
+                <input type="email" name="email" placeholder="Email" />
+                <div id="resize"><textarea id="ta" type="text" name="message" onkeydown="resize(event)" onscroll="scrollResize()" placeholder="Message"></textarea></div>
                 <input type="submit" name="sendbtn" value="SEND" />
             </fieldset>
-
         </form>
+        <div id="followUs">
+            <h2>FOLLOW US</h2>
+            <ul class="fontAwesome">
+                <a href="#"><li class="icon">&#xf099;</li></a>
+                <a href="#"><li class="icon">&#xf09a;</li></a>
+                <a href="#"><li class="icon">&#xf16d;</li></a>
+                <a href="#"><li class="icon">&#xf17d;</li></a>
+                <a href="#"><li class="icon">&#xf09b;</li></a>
+                <a href="#"><li class="icon">&#xf26e;</li></a>
+                <a href="#"><li class="icon">&#xf095;</li></a>
+                <a href="#"><li class="icon">&#xf003;</li></a>
+            </ul>
+        </div>
+        <ul class="bottom">
+            <li class="btmItem">&copy Untitled. All Rights reserved</li>
+            <li class="btmItem">Design: <a href="https://www.github.com/TahaZaman">TahaZaman</a></li>
+            <li class="btmItem">Demo Images: <a href="https://unsplash.com/">Unsplash</a></li>
+        </ul>
 
     </div>
 </body>
-<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+<!--<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 <script>
   // Initialize Firebase
   var config = {
@@ -145,7 +163,7 @@
     storageBucket: "",
   };
   firebase.initializeApp(config);
-</script>
+</script>-->
 <script type="text/javascript" src="scripts/index.js"></script>
 
 </html>
