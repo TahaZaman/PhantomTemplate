@@ -3,13 +3,10 @@
 [debug] CLI Version:  3.0.3
 [debug] Platform:     win32
 [debug] Node Version: v6.2.0
-[debug] Time:         Mon Jun 27 2016 00:33:29 GMT+0500 (Pakistan Standard Time)
+[debug] Time:         Mon Jun 27 2016 00:50:13 GMT+0500 (Pakistan Standard Time)
 [debug] ----------------------------------------------------------------------
 [debug] 
 [debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
-[debug] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token
-[debug] <<< HTTP RESPONSE 200
 [debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/phantomtemplate 
 [debug] <<< HTTP RESPONSE 200
 [debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/phantomtemplate/tokens 
@@ -20,4 +17,4 @@
 [info] i  deploying hosting
 [info] +  database: rules ready to deploy.
 [info] i  hosting: preparing public directory for upload...
-[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/phantomtemplate/uploads/-KLDC6yFvd7O4jVU_khs?fileCount=28&message= 
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/phantomtemplate/uploads/-KLDFq7f2K_Aupnw4Lir?fileCount=28&message= 
